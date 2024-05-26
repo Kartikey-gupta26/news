@@ -1,0 +1,37 @@
+.card{
+    transition: background-color,color 0.3s ease, transform 0.3s ease; 
+}
+
+.card:hover{
+    transform: scale(1.02);
+    background-color:#16181c ;
+}
+
+.image{
+    position: relative;
+}
+
+.play p{
+    display: flex;
+    opacity: 1;
+    color: white;
+    background-color: rgb(22, 24, 28,0.5);
+    position: absolute;
+    right: 0%;
+    bottom:0%;
+    opacity: 0;
+    /* translate: 0 25%; */
+    transition: all 0.2s ease-in;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.image:hover .play p{
+    /* translate: 0 0; */
+    opacity: 1;
+}
