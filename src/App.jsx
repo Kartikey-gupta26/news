@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
 import Card from './Card.jsx'
 import Countries from './Countries.jsx'
@@ -14,7 +14,6 @@ function App() {
 
   return (
       <div className="container mx-auto flex bg-black h-auto text-white">
-
 
           {/* <div className="first w-[20%] pl-[5%] pr-[2%]"> 
             <div className="logo my-4">
@@ -38,6 +37,21 @@ function App() {
 
 
         <div className="second border-[1px] border-x-white border-y-black flex flex-col w-[100%]">
+          
+          <div className="posts bg-black-50">
+          {/* <marquee behavior="" direction="" > */}
+            <div className="headline text-5xl text-center my-10 px-20">Top news from your country</div>
+          {/* </marquee> */}
+            <Card selectedCountry={selectedCountry} />
+          </div>
+        </div>
+
+
+        <div className="third w-[30%] flex flex-col p-5 pr-[5%] ">
+          
+          <div className=" py-3 bg-black top-0">
+            <input type="text" className=" px-10 search rounded-2xl bg-[#16181c] border-none w-full h-10" placeholder="Search"></input>
+          </div>
           <div className="header">
             <ul className='flex gap-10 px-5 py-2 justify-around'>
               <li><div >
@@ -102,18 +116,6 @@ function App() {
                   )}</div>
               </li>
             </ul>
-          </div>
-          <div className="posts bg-black-50">
-          <div className="headline text-5xl text-center my-10">Top news from your country</div>
-            <Card selectedCountry={selectedCountry} />
-          </div>
-        </div>
-
-
-        <div className="third w-[30%] flex flex-col p-5 pr-[5%] ">
-
-          <div className=" py-3 bg-black top-0">
-            <input type="text" className=" px-10 search rounded-2xl bg-[#16181c] border-none w-full h-10" placeholder="Search"></input>
           </div>
 
           <div className="subtopremium m-2 bg-[#16181c] p-4 rounded-2xl mt-[15%]">

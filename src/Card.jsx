@@ -49,7 +49,7 @@ function Card({ selectedCountry }) {
               </div>
             </div>
 
-            <p className="text-pretty p-3">{card.description}</p>
+            <p className="text-pretty p-3 desc">{card.description}</p>
             {/* <p>{card.content}</p> */}
           </div>
         </a>
