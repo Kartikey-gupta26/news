@@ -2,6 +2,7 @@
   "name": "twitter-react",
   "private": true,
   "version": "0.0.0",
+  "homepage":"https://primenews-kappa.vercel.app/",
   "type": "module",
   "scripts": {
     "dev": "vite",
